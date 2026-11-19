@@ -13,6 +13,7 @@ export const profile = {
   github: "https://github.com/Jaybaited",
   githubHandle: "Jaybaited",
   site: "https://portfolio-fortu-ciejay.vercel.app",
+  linkedin: "https://www.linkedin.com/in/jay-undefined-310a4044a/",
   photo: "/img/ciejay.jpg",
   about: [
     "I'm an IT student at STI College Alabang who likes owning a system end to end: the database, the API, the screens people actually touch, and the small details that make them feel right.",
@@ -217,8 +218,8 @@ export const timeline = [
   { year: "2026", title: "1st Runner-up, CODEFEST", place: "Tagisan ng Talino at Sining · STI College", kind: "Award" },
   { year: "2025 – 2026", title: "Lead Developer, SignSpeak-SafeCheck", place: "Capstone · Philippine School for the Deaf", kind: "Project" },
   { year: "2025 – 2026", title: "Freelance C# Developer", place: "Pisonet Daily Tracker", kind: "Work" },
-  { year: "2024", title: "Java Fundamentals", place: "Certification", kind: "Certificate" },
+  { year: "2024", title: "Java Fundamentals", place: "Oracle Academy · course completion", kind: "Certificate" },
   { year: "2023 – 2026", title: "BS Information Technology", place: "STI College Alabang", kind: "Education" },
-  { year: "2023", title: "Computer Systems Servicing NC II", place: "TESDA certification", kind: "Certificate" },
+  { year: "2023", title: "Computer Systems Servicing NC II", place: "TESDA National Certificate · valid until 2028", kind: "Certificate" },
   { year: "2021 – 2023", title: "Information and Communication Technology", place: "Muntinlupa National High School", kind: "Education" },
 ];

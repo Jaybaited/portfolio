@@ -18,14 +18,14 @@ export function Contact({ hasResume }: { hasResume: boolean }) {
   };
 
   return (
-    <footer id="contact" className="flip relative overflow-hidden pt-28 md:pt-36">
+    <footer id="contact" className="relative overflow-hidden pt-28 md:pt-36">
       <div aria-hidden className="pointer-events-none absolute -right-40 -top-40 h-[520px] w-[520px] rounded-full bg-accent opacity-[0.12] blur-[120px]" />
       <div aria-hidden className="pointer-events-none absolute -bottom-40 -left-40 h-[420px] w-[420px] rounded-full bg-soft opacity-[0.12] blur-[120px]" />
 
       <div className="relative mx-auto max-w-[1400px] px-5 md:px-10">
         <Reveal>
           <p className="font-mono text-xs uppercase tracking-[0.22em] text-muted">
-            <span className="text-accent">05</span> / Contact
+            <span className="text-accent">08</span> / Contact
           </p>
         </Reveal>
         <Reveal delay={80}>
@@ -64,6 +64,16 @@ export function Contact({ hasResume }: { hasResume: boolean }) {
               Send an email ↗
             </a>
           </Magnetic>
+          <Magnetic>
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-3 rounded-full border border-line px-7 py-5 font-mono text-xs uppercase tracking-[0.18em] hover:border-fg"
+            >
+              LinkedIn ↗
+            </a>
+          </Magnetic>
         </Reveal>
 
         <div className="mt-24 grid gap-8 border-t border-line py-10 font-mono text-xs uppercase tracking-[0.16em] md:grid-cols-4">
@@ -71,6 +81,10 @@ export function Contact({ hasResume }: { hasResume: boolean }) {
             <p className="text-muted">Elsewhere</p>
             <a href={profile.github} target="_blank" rel="noreferrer" className="u-link mt-3 inline-block pb-0.5">
               GitHub · @{profile.githubHandle} ↗
+            </a>
+            <br />
+            <a href={profile.linkedin} target="_blank" rel="noreferrer" className="u-link mt-2 inline-block pb-0.5">
+              LinkedIn ↗
             </a>
           </div>
           <div>
@@ -84,8 +98,8 @@ export function Contact({ hasResume }: { hasResume: boolean }) {
                 Download PDF ↓
               </a>
             ) : (
-              <a href={`mailto:${profile.email}?subject=Resume%20request`} className="u-link mt-3 inline-block pb-0.5">
-                Available on request
+              <a href="#about" className="u-link mt-3 inline-block pb-0.5">
+                See profile &amp; résumé ↑
               </a>
             )}
           </div>
@@ -96,6 +110,13 @@ export function Contact({ hasResume }: { hasResume: boolean }) {
             </a>
           </div>
         </div>
+
+        <p className="border-t border-line py-6 text-xs leading-relaxed text-muted">
+          <span className="font-mono uppercase tracking-[0.16em]">Credits · </span>
+          Photos, project screenshots and certificates are my own. Company facts in the HTE evaluation come from the sources linked under
+          each company. Fonts: Geist and Instrument Serif (Google Fonts, SIL Open Font License). The Claude-style figure on my ID card is a
+          drawn homage to Anthropic&apos;s Claude, not its official logo. Built with Next.js and deployed on Vercel.
+        </p>
       </div>
 
       <p
