@@ -13,13 +13,13 @@ const KIND_COLOR: Record<string, string> = {
 /** Professional profile and résumé: intro, career objective, immersion goals, personal info, timeline. */
 export function About() {
   return (
-    <section id="about" className="relative py-28 md:py-36">
+    <section id="about" className="flip relative py-28 md:py-36">
       <div className="mx-auto max-w-[1400px] px-5 md:px-10">
         <div className="grid gap-16 lg:grid-cols-[1fr_1.1fr]">
           <div>
             <Reveal>
               <p className="font-mono text-xs uppercase tracking-[0.22em] text-muted">
-                <span className="text-accent">04</span> / Profile &amp; résumé
+                <span className="text-accent">03</span> / Profile &amp; résumé
               </p>
             </Reveal>
             <Reveal delay={80}>

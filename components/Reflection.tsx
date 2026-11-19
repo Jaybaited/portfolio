@@ -6,12 +6,12 @@ const DOT = ["bg-accent", "bg-soft", "bg-good"];
 /** Reflection on preparing for Work Immersion, plus a 3 to 5 year career plan. */
 export function Reflection() {
   return (
-    <section id="reflection" className="flip relative py-28 md:py-36">
+    <section id="reflection" className="relative py-28 md:py-36">
       <div className="mx-auto grid max-w-[1400px] gap-16 px-5 md:px-10 lg:grid-cols-[1.3fr_1fr]">
         <div>
           <Reveal>
             <p className="font-mono text-xs uppercase tracking-[0.22em] text-muted">
-              <span className="text-accent">07</span> / Reflection
+              <span className="text-accent">06</span> / Reflection
             </p>
           </Reveal>
           <Reveal delay={80}>

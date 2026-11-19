@@ -29,11 +29,11 @@ export default function Home() {
         <Projects />
         <SkillsKeyboard />
         <SoftSkills />
-        <TypingGame />
         <About />
         <Certificates />
         <Internship />
         <Reflection />
+        <TypingGame />
       </main>
       <Contact hasResume={hasResume} />
       <LeaveConfirm />

@@ -23,13 +23,13 @@ export function Certificates() {
   }, [open]);
 
   return (
-    <section id="achievements" className="flip relative py-28 md:py-36">
+    <section id="achievements" className="relative py-28 md:py-36">
       <div className="mx-auto max-w-[1400px] px-5 md:px-10">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
             <Reveal>
               <p className="font-mono text-xs uppercase tracking-[0.22em] text-muted">
-                <span className="text-accent">05</span> / Achievements
+                <span className="text-accent">04</span> / Achievements
               </p>
             </Reveal>
             <Reveal delay={80}>

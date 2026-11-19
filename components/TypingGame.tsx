@@ -321,7 +321,7 @@ export function TypingGame() {
           <div>
             <Reveal>
               <p className="font-mono text-xs uppercase tracking-[0.22em] text-muted">
-                <span className="text-accent">03</span> / Challenge
+                <span className="text-accent">07</span> / Challenge
               </p>
             </Reveal>
             <Reveal delay={80}>
