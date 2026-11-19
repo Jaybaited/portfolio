@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import Script from "next/script";
+import { profile } from "@/lib/content";
 import "./globals.css";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -13,6 +14,8 @@ const instrument = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
+  // Full site address, so link previews get an absolute URL for the preview image
+  metadataBase: new URL(profile.site),
   title: "Ciejay Fortu · Full-Stack Developer",
   description:
     "Portfolio of Ciejay Fortu, a full-stack developer from Muntinlupa, Philippines. Lead developer of SignSpeak-SafeCheck.",
@@ -21,6 +24,13 @@ export const metadata: Metadata = {
     title: "Ciejay Fortu · Full-Stack Developer",
     description: "Web, mobile and desktop systems, from sign-language recognition to RFID school gates.",
     type: "website",
+    url: "/",
+    siteName: "Ciejay Fortu",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ciejay Fortu · Full-Stack Developer",
+    description: "Web, mobile and desktop systems, from sign-language recognition to RFID school gates.",
   },
 };
 

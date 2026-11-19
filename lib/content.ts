@@ -12,6 +12,7 @@ export const profile = {
   email: "ciejayfortu29@gmail.com",
   github: "https://github.com/Jaybaited",
   githubHandle: "Jaybaited",
+  site: "https://portfolio-fortu-ciejay.vercel.app",
   photo: "/img/ciejay.jpg",
   about: [
     "I'm an IT student at STI College Alabang who likes owning a system end to end: the database, the API, the screens people actually touch, and the small details that make them feel right.",
