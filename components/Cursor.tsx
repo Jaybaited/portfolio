@@ -66,7 +66,7 @@ export function Cursor() {
   const size = (hovering ? 34 : 24) * (down ? 0.8 : 1);
 
   return (
-    <div aria-hidden className="pointer-events-none fixed inset-0 z-[70] mix-blend-difference" style={{ opacity: hidden ? 0 : 1 }}>
+    <div aria-hidden className="pointer-events-none fixed inset-0 z-[100] mix-blend-difference" style={{ opacity: hidden ? 0 : 1 }}>
       <div ref={ring} className="absolute left-0 top-0">
         <div
           className="-translate-x-1/2 -translate-y-1/2 rounded-full border border-white/70 transition-[width,height] duration-300 ease-out"

@@ -11,7 +11,7 @@ const KIND_COLOR: Record<string, string> = {
 };
 
 /** Professional profile and résumé: intro, career objective, immersion goals, personal info, timeline. */
-export function About() {
+export function About({ hasResume }: { hasResume: boolean }) {
   return (
     <section id="about" className="flip relative py-28 md:py-36">
       <div className="mx-auto max-w-[1400px] px-5 md:px-10">
@@ -56,6 +56,20 @@ export function About() {
                 ))}
               </dl>
             </Reveal>
+
+            {hasResume && (
+              <Reveal delay={280}>
+                <a
+                  href="/resume.pdf"
+                  download="Ciejay-Fortu-Resume.pdf"
+                  data-cursor="Download"
+                  className="group mt-8 inline-flex items-center gap-3 rounded-full bg-fg px-7 py-4 font-mono text-xs uppercase tracking-[0.18em] text-bg transition-colors hover:bg-accent hover:text-ink"
+                >
+                  Download résumé (PDF)
+                  <span className="transition-transform duration-300 group-hover:translate-y-0.5">↓</span>
+                </a>
+              </Reveal>
+            )}
           </div>
 
           <div className="lg:pt-24">

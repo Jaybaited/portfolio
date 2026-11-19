@@ -54,6 +54,16 @@ export function Scramble({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView, reduced]);
 
+  // replay when the intro loader lifts, so the decode is not hidden behind it
+  useEffect(() => {
+    const onIntro = () => {
+      if (inView) run();
+    };
+    window.addEventListener("introdone", onIntro);
+    return () => window.removeEventListener("introdone", onIntro);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [inView, reduced]);
+
   return (
     <span
       ref={ref}

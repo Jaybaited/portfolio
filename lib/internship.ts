@@ -58,8 +58,8 @@ export type Certificate = {
 
 export const certificates: Certificate[] = [
   {
-    title: "1st Runner-Up, Tagisan ng Talino at Tagisan ng Sining 2026 (CODEFEST)",
-    issuer: "STI College Alabang",
+    title: "1st Runner-Up, CODEFEST 2026: Android app development (Android Studio)",
+    issuer: "Tagisan ng Talino at Tagisan ng Sining · STI College Alabang",
     date: "September 25, 2026",
     kind: "Award",
     image: "/certs/codefest-2026.jpg",

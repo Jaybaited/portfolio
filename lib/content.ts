@@ -13,7 +13,6 @@ export const profile = {
   github: "https://github.com/Jaybaited",
   githubHandle: "Jaybaited",
   site: "https://portfolio-fortu-ciejay.vercel.app",
-  linkedin: "https://www.linkedin.com/in/jay-undefined-310a4044a/",
   photo: "/img/ciejay.jpg",
   about: [
     "I'm an IT student at STI College Alabang who likes owning a system end to end: the database, the API, the screens people actually touch, and the small details that make them feel right.",
@@ -215,7 +214,7 @@ export const skills: Skill[] = [
 ];
 
 export const timeline = [
-  { year: "2026", title: "1st Runner-up, CODEFEST", place: "Tagisan ng Talino at Sining · STI College", kind: "Award" },
+  { year: "2026", title: "1st Runner-up, CODEFEST: Android app development", place: "Tagisan ng Talino at Sining · STI College Alabang", kind: "Award" },
   { year: "2025 – 2026", title: "Lead Developer, SignSpeak-SafeCheck", place: "Capstone · Philippine School for the Deaf", kind: "Project" },
   { year: "2025 – 2026", title: "Freelance C# Developer", place: "Pisonet Daily Tracker", kind: "Work" },
   { year: "2024", title: "Java Fundamentals", place: "Oracle Academy · course completion", kind: "Certificate" },

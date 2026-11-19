@@ -64,16 +64,6 @@ export function Contact({ hasResume }: { hasResume: boolean }) {
               Send an email ↗
             </a>
           </Magnetic>
-          <Magnetic>
-            <a
-              href={profile.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-3 rounded-full border border-line px-7 py-5 font-mono text-xs uppercase tracking-[0.18em] hover:border-fg"
-            >
-              LinkedIn ↗
-            </a>
-          </Magnetic>
         </Reveal>
 
         <div className="mt-24 grid gap-8 border-t border-line py-10 font-mono text-xs uppercase tracking-[0.16em] md:grid-cols-4">
@@ -81,10 +71,6 @@ export function Contact({ hasResume }: { hasResume: boolean }) {
             <p className="text-muted">Elsewhere</p>
             <a href={profile.github} target="_blank" rel="noreferrer" className="u-link mt-3 inline-block pb-0.5">
               GitHub · @{profile.githubHandle} ↗
-            </a>
-            <br />
-            <a href={profile.linkedin} target="_blank" rel="noreferrer" className="u-link mt-2 inline-block pb-0.5">
-              LinkedIn ↗
             </a>
           </div>
           <div>
@@ -94,7 +80,7 @@ export function Contact({ hasResume }: { hasResume: boolean }) {
           <div>
             <p className="text-muted">Résumé</p>
             {hasResume ? (
-              <a href="/resume.pdf" download className="u-link mt-3 inline-block pb-0.5">
+              <a href="/resume.pdf" download="Ciejay-Fortu-Resume.pdf" className="u-link mt-3 inline-block pb-0.5">
                 Download PDF ↓
               </a>
             ) : (

@@ -76,6 +76,22 @@ body {
   overflow-x: clip;
 }
 
+/* Text is not highlightable (it reads as an app, not a document); form fields stay editable */
+body {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+input,
+textarea,
+.selectable {
+  -webkit-user-select: text;
+  user-select: text;
+}
+img {
+  -webkit-user-drag: none;
+}
+
 ::selection {
   background: var(--accent);
   color: var(--ink);
@@ -149,6 +165,20 @@ body {
 }
 @keyframes popin {
   from { opacity: 0; transform: translateY(16px) scale(0.96); }
+}
+
+/* Intro loader: hidden at once on repeat visits; never stuck if scripts fail */
+html[data-intro="done"] .loader {
+  display: none;
+}
+.loader {
+  animation: loaderfailsafe 0s linear 6s forwards;
+}
+@keyframes loaderfailsafe {
+  to { visibility: hidden; }
+}
+@keyframes loaderword {
+  from { opacity: 0; transform: translateY(8px); }
 }
 
 /* Typing caret */

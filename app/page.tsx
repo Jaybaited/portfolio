@@ -7,6 +7,7 @@ import { Cursor } from "@/components/Cursor";
 import { Hero } from "@/components/Hero";
 import { Internship } from "@/components/Internship";
 import { LeaveConfirm } from "@/components/LeaveConfirm";
+import { Loader } from "@/components/Loader";
 import { Marquee } from "@/components/Marquee";
 import { Nav } from "@/components/Nav";
 import { Projects } from "@/components/Projects";
@@ -20,6 +21,7 @@ export default function Home() {
   const hasResume = existsSync(path.join(process.cwd(), "public", "resume.pdf"));
   return (
     <>
+      <Loader />
       <Cursor />
       <div className="grain" aria-hidden />
       <Nav />
@@ -29,7 +31,7 @@ export default function Home() {
         <Projects />
         <SkillsKeyboard />
         <SoftSkills />
-        <About />
+        <About hasResume={hasResume} />
         <Certificates />
         <Internship />
         <Reflection />
